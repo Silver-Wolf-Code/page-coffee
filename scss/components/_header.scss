@@ -1,0 +1,144 @@
+#bar{
+  display: none;
+  cursor: pointer;
+
+  i{
+    font-size: 35px;
+  }
+
+}
+.hero{
+  background-image: url(../img/Fondo1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 28px;
+  color: $color-white;
+  text-align: center;
+
+  .hero__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    
+    .hero__list{
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      gap: 32px;
+
+      .hero__item{
+        list-style: none;
+
+        .hero__link{
+          text-decoration: none;
+          color: $color-white;
+          text-transform: uppercase;
+          font-weight: 800;
+          
+          &:hover{
+            border-bottom: 3px solid $color-white;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .hero__content{
+    margin: 90px 0 140px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .hero__title{
+      font-size: 4.4rem;
+      text-transform: uppercase;
+      max-width: 450px;
+      margin-bottom: 30px;
+    }
+
+    .line{
+      @extend %line;
+    }
+
+    .hero__copy{
+      max-width: 500px;
+      line-height: 1.6;
+    }
+    
+  }
+
+}
+
+@media screen and (max-width: 950px){
+
+  #bar{
+    display: initial;
+    cursor: pointer;
+
+    i{
+      font-size: 35px;
+    }
+
+  }
+
+  .hero{
+  
+    .hero__nav{
+      
+      .hero__list{
+        position: absolute;
+        right: 0;
+        top: 100%;
+        grid-template-columns: auto;
+        gap: 15px;
+        background: $color-primary;
+        padding: 8px 15px;
+        border-radius: 8px;
+        opacity: 0;
+
+
+        .hero__item{
+          
+          .hero__link{
+            text-decoration: none;
+            color: $color-white;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1.4rem;
+
+
+            &:hover{
+              border-bottom: 2px solid $color-white;
+            }
+
+          }
+  
+        }
+  
+      }
+  
+    }
+
+  }
+
+  .active{
+    opacity: 1 !important;
+  }
+
+}
+
+@media screen and (max-width: 425px){
+
+  #bar{
+    
+    i{
+      font-size: 30px;
+    }
+
+  }
+}

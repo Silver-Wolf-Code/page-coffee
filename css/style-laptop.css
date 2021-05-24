@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "item1 item2" "item3 item3" "item4 item4" "item5 item6";
+}
+
+.main .bedroom {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.main .bedroom .bedroom__product {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: flex-start;
+  padding: 30px 20px;
+}
+
+.main .bedroom .bedroom__product .bedroom__text {
+  text-align: left;
+}

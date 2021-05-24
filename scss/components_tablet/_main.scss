@@ -1,0 +1,36 @@
+.main{
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: 
+  "item1 item1"
+  "item2 item2"
+  "item3 item3"
+  "item4 item4"
+  "item5 item6";
+
+  .primary{
+
+    .primary__copy{
+      max-width: 600px;
+    }
+
+  }
+
+  .secondary{
+
+    .secondary__copy{
+      max-width: 600px;
+    }
+  }
+
+  .third{
+  
+    .btn{
+      width: 300px;
+      height: 40px;
+      padding: 0;
+    }
+
+  }
+
+}

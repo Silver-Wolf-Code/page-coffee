@@ -1,0 +1,15 @@
+
+// abstract
+
+@import 
+  "abstract/base",
+  "abstract/variable",
+  "abstract/inherit",
+  "abstract/mixin";
+
+// component
+
+@import 
+  "components_tablet/header",
+  "components_tablet/main",
+  "components_tablet/footer";

@@ -1,0 +1,17 @@
+@mixin services($bg:$color-primary, $color:$color-secondary) {
+  padding: 150px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $bg;
+  color:$color;
+}
+
+@mixin services__two($bg, $color, $py, $px) {
+  padding: $py $px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $bg;
+  color:$color;
+}

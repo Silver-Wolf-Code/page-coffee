@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   background: $bg;
-  color:$color;
+  color: $color;
 }
 
 @mixin services__two($bg, $color, $py, $px) {
@@ -13,5 +13,5 @@
   flex-direction: column;
   align-items: center;
   background: $bg;
-  color:$color;
+  color: $color;
 }
